@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu with Category Filters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu-container">
+    <h1>Our Menu</h1>
+    <input type="radio" id="tab-north" name="menu-tabs" checked>
+    <input type="radio" id="tab-south" name="menu-tabs">
+    <input type="radio" id="tab-drinks" name="menu-tabs">
+    <div class="tab-labels">
+      <label for="tab-north" class="label-north">North Indian</label>
+      <label for="tab-south" class="label-south">South Indian</label>
+      <label for="tab-drinks" class="label-drinks">Drinks</label>
+    </div>
+    <div class="menu-content">
+      <div class="menu-category category-north">
+        <div class="menu-item">
+          <div class="item-header">
+            <h3>Butter Chicken</h3>
+            <span class="price">₹380</span>
+          </div>
+          <p>Tender tandoori chicken simmered in a rich, creamy tomato and butter gravy.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <h3>Paneer Tikka Masala</h3>
+            <span class="price">₹320</span>
+          </div>
+          <p>Grilled cottage cheese cubes cooked in a spicy, flavorful onion-tomato masala.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <h3>Dal Makhani with Butter Naan</h3>
+            <span class="price">₹280</span>
+          </div>
+          <p>Slow-cooked black lentils enriched with cream, served with fresh leavened bread.</p>
+        </div>
+      </div>
+      <div class="menu-category category-south">
+        <div class="menu-item">
+          <div class="item-header">
+            <h3>Masala Dosa</h3>
+            <span class="price">₹140</span>
+          </div>
+          <p>Crispy rice and lentil crepe stuffed with a spiced potato mash, served with sambar and chutney.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <h3>Idli Sambar (2 Pcs)</h3>
+            <span class="price">₹90</span>
+          </div>
+          <p>Steamed soft rice cakes served with a flavorful lentil chowder and coconut dip.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <h3>Malabar Parotta with Chicken Korma</h3>
+            <span class="price">₹340</span>
+          </div>
+          <p>Flaky, layered flatbread paired with a rich, coconut-based chicken curry.</p>
+        </div>
+      </div>
+      <div class="menu-category category-drinks">
+        <div class="menu-item">
+          <div class="item-header">
+            <h3>Mango Lassi</h3>
+            <span class="price">₹110</span>
+          </div>
+          <p>A classic, creamy yogurt drink blended with sweet Alphonso mangoes.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <h3>Filter Coffee</h3>
+            <span class="price">₹80</span>
+          </div>
+          <p>Traditional South Indian chicory-infused coffee, frothed perfectly with milk.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
