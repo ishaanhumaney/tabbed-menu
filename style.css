@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcf8ee;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.menu-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+input[type="radio"][name="menu-tabs"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tab-labels {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 30px;
+}
+
+.tab-labels label {
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #777;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px; 
+}
+
+.tab-labels label:hover {
+  color: #333;
+}
+
+#tab-north:checked ~ .tab-labels .label-north,
+#tab-south:checked ~ .tab-labels .label-south,
+#tab-drinks:checked ~ .tab-labels .label-drinks {
+  color: #ff6b6b;
+  border-bottom-color: #ff6b6b;
+}
+
+.menu-category {
+  display: none;
+}
+
+#tab-north:checked ~ .menu-content .category-north,
+#tab-south:checked ~ .menu-content .category-south,
+#tab-drinks:checked ~ .menu-content .category-drinks {
+  display: block;
+}
+
+.menu-item {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #eee;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.item-header h3 {
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.menu-item p {
+  color: #666;
+  font-size: 0.95rem;
+}
